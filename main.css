@@ -86,7 +86,9 @@ textarea:focus {
     border: solid 2px darkblue;
 }
 
-
+input, label {
+    display: inline-block;
+}
 /****************************
 LAYOUT STYLES
 *****************************/
@@ -121,20 +123,6 @@ label {
 
 /***------ Borders ------***/
 
-/* To stop legend from being a little bitch */
-/*
-fieldset { 
-    position:relative;
-    padding-top: 60px;
-}
-legend {
-    display: block;
-    position:absolute;
-    top:20px;
-}
-*/
-/* To stop legend from being a little bitch */
-
 legend {
     border-top: solid 2px #2b313a;
 }
@@ -158,14 +146,13 @@ legend {
     .contact textarea,
     .contact select {    
         width: 60%;
-        text-align: right;
     }
     #zip {
         width: 20%;
     }
     
-    .contact label {
+    .contact > label {
         display: inline-block;
-        width: 30%;
+        width: 39%;
     }
 }
