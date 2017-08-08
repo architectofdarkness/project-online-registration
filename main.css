@@ -13,9 +13,8 @@ option {
 }
 
 select {
-   -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;    
 }
 
 h1 {
