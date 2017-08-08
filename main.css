@@ -9,6 +9,7 @@ body,
 option {
     font-size: 14px;
     font-family: 'Merriweather', serif;
+    background: #fff3f2;
 }
 
 select {
@@ -34,7 +35,9 @@ p.light {
     font-size: 0.9em;
 }
 
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    vertical-align: center;
     font-family: 'Merriweather', serif;
     font-size: 14px;
     font-style: italic;
@@ -66,7 +69,7 @@ select {
     margin-bottom: 10px;
     
     font-size: 16px;
-    background-color: #e8eeef;
+    background-color: #fff7f7;
 }
 
 legend {
@@ -94,9 +97,12 @@ button {
     padding: 20px;
 }
 
-input:focus,
-textarea:focus {
-    border: solid 2px darkblue;
+input:not(:focus) {
+    transition: 1s;
+}
+
+input:focus {
+    border: solid 2px darkgrey;
 }
 
 input, label, .title {
@@ -141,7 +147,7 @@ legend {
 	width: 100%;
     display: block;
 	position: relative;
-    top: -40px;
+    top: -50px;
 }
 
 /****************************
